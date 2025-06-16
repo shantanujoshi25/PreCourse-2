@@ -1,4 +1,6 @@
-# Python program for implementation of Quicksort
+
+# // Time Complexity : O(n log n)  
+# // Space Complexity : O(n)
 
 # This function is same in both iterative and recursive
 def partition(arr, low, high):
