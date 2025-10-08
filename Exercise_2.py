@@ -23,8 +23,8 @@ def partition(arr,low,high):
             arr[li] = temp
             li+=1
 
-    temp = arr[len(arr)-1]
-    arr[len(arr)-1] = arr[li] 
+    temp = arr[high]
+    arr[high] = arr[li] 
     arr[li] = temp
 
     return li
@@ -38,7 +38,7 @@ def quickSort(arr,low,high):
     if(low<high):
         i = partition(arr,low,high)
         quickSort(arr,low,i-1)
-        quickSort(arr,i,high)
+        quickSort(arr,i+1,high)
     
     
     
